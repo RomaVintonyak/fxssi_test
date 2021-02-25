@@ -1,0 +1,84 @@
+/*variables*/
+@import "./var.scss";
+/*helpers class*/
+@import "./help.scss";
+/*mixins*/
+@import "./mixin.scss";
+#header {
+  width: 100%;
+  height: 9rem;
+}
+.header__wraper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__brand {
+  width: 26rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
+.menu__wraper {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e9f3;
+  &--text {
+    h2 {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.02em;
+      color: $main_text;
+    }
+  }
+}
+.lang__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  &--icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background-color: $blue;
+    border: 2.5px solid $blue;
+    margin-right: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--text {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid #e9ecf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      letter-spacing: 0.02em;
+      color: #acacac;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

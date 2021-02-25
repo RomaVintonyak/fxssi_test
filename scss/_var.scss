@@ -1,8 +1,12 @@
 /*colors Variable*/
 $black: #000000;
 $white: #ffffff;
+$blue: #6C9CFC;
+$main_bg: #F2F5F9;;
+$main_text: #333333;
+$light_text: #999999;
 
 
 /*google foonts*/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-$font: 'Ubuntu', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');;
+$font: 'Roboto', sans-serif;
