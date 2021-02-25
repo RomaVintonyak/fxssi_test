@@ -29,19 +29,19 @@
 .menu__item {
   width: 100%;
   height: 70px;
-
-
+  display: flex;
+  align-items: center;
   padding-left: 3rem;
   transition: background-color 0.2s linear;
-  object {
+  svg {
     width: 2.1rem;
     height: 2.1rem;
     margin-right: 1.7rem;
-    svg{
-      fill: #7D8B95;
-    }
+    fill: #7d8b95;
+    transition: fill 0.2s linear;
   }
   a {
+    line-height: 7rem;
     text-decoration: none;
     font-family: $font;
     font-style: normal;
@@ -52,10 +52,12 @@
     transition: color 0.2s linear;
   }
   &:hover {
-    cursor: pointer;
     background-color: $blue;
     a {
       color: $white;
+    }
+    svg {
+      fill: $white;
     }
   }
   &--active {
@@ -64,17 +66,21 @@
     a {
       color: $white;
     }
+    svg {
+      fill: $white;
+    }
   }
 }
 .logout {
   width: 100%;
-
+  display: flex;
   padding-left: 3rem;
   padding-bottom: 2.5rem;
   img {
     margin-right: 1.9rem;
   }
-  p {
+  a {
+    text-decoration: none;
     font-family: $font;
     font-style: normal;
     font-weight: 700;
@@ -82,5 +88,10 @@
     line-height: 7rem;
     letter-spacing: 0.04em;
     color: $light_text;
+  }
+  &:hover {
+    a {
+      cursor: pointer;
+    }
   }
 }

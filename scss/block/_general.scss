@@ -1,0 +1,14 @@
+/*variables*/
+@import "./var.scss";
+/*helpers class*/
+@import "./help.scss";
+/*mixins*/
+@import "./mixin.scss";
+#main{
+  width: calc(100% - 26rem);
+  position: absolute;
+  right: 0;
+  top: 9rem;
+  z-index: 15;
+  padding-top: 4rem;
+}
