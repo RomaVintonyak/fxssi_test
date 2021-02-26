@@ -41,6 +41,9 @@
   </header>
   <!--sidebar-->
   <aside id="aside">
+    <div class="nav__brand nav__brand--aside">
+      <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+    </div><!--/.nav__brand-->
     <nav class="aside__nav">
      <ul class="aside__nav--menu">
        <li class="menu__item">
@@ -71,7 +74,37 @@
     <div class="container">
     <!--general seting-->
     <section id="generalSeting">
-      
+      <div class="general__wraper">
+        <div class="general__wraper--title">
+          <h2>General Settings</h2>
+        </div><!--/.title-->
+        <h4>Profile picture</h4>
+        <div class="general__wraper--avatar">
+          <div class="avatar__icon">
+            <div class="avatar__icon--circle">
+              <img src="img/general/avatarIcon.svg" alt="avatar">
+            </div>
+          </div>
+          <div class="avatar__btn">
+            <div class="avatar__btn--load">
+              <label for="loadAvatar">Choose file</label>
+              <input type="file" id="loadAvatar">
+            </div>
+            <p><img src="img/general/fileFormatsIcon.svg" alt="icon"> Jpg, png, bmp, size - 400*400</p>
+          </div>
+        </div><!---/.avatar-->
+        <div class="general__wraper--password">
+          <p>Password</p>
+          <a href="#" class="btn" >Change Password</a>
+        </div><!---/.password-->
+        <form acttion="#" class="general__wraper--form" id="setingForm">
+          <label for="fullName">Full Name</label>
+          <input type="text" name="setingName" id="fullName" placeholder="Your name">
+          <label for="setingMail">Email Adress</label>
+          <input type="email" name="setingMail" id="setingMail" placeholder="Email Address">
+          <button type="button" class="btn btn--active" id="setingButton">Save Changes</button>
+        </form><!--/.form-->
+      </div><!--/.general__wraper-->
     </section><!--general seting-->      
     </div><!--/.container-->
   </main>

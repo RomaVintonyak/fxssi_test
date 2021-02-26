@@ -1,0 +1,40 @@
+/*variables*/
+@import "./var.scss";
+/*helpers class*/
+@import "./help.scss";
+/*mixins*/
+@import "./mixin.scss";
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 7rem;
+  color: $blue;
+  border: 2px solid rgba(108, 156, 252, 0.25);
+  border-radius: 0.6rem;
+  padding: 0.5rem 5rem;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    color: $white;
+    background-color: $blue;
+  }
+  &--active{
+    color: $white;
+    background-color: $blue;
+    &:hover{
+      cursor: pointer;
+      color: $blue;
+      background-color: $white;
+    }
+  }
+}
+#setingButton{
+  display: block;
+}

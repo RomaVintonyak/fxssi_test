@@ -18,6 +18,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -446,6 +450,11 @@ a:focus {
     background-color: #ffffff;
 }
 
+.nav__brand--aside {
+    height: 9rem;
+    width: 26rem;
+}
+
 .menu__wraper {
     width: 100%;
     height: 9rem;
@@ -579,7 +588,7 @@ a:focus {
     z-index: 10;
     background-color: #ffffff;
     width: 26rem;
-    height: calc(100vh - 9rem);
+    height: 100vh;
 }
 
 .aside__nav {
@@ -746,6 +755,271 @@ a:focus {
     top: 9rem;
     z-index: 15;
     padding-top: 4rem;
+}
+
+.general__wraper {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-bottom: 5.5rem;
+}
+
+.general__wraper h4 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 6rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.general__wraper--title {
+    margin-bottom: 2.5rem;
+}
+
+.general__wraper--title h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 6rem;
+    color: #333333;
+}
+
+.general__wraper--avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.general__wraper--password {
+    margin-bottom: 3.4rem;
+}
+
+.general__wraper--password p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 6rem;
+    color: #333333;
+    margin-bottom: 0.8rem;
+}
+
+.general__wraper--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.general__wraper--form label {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 6rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.general__wraper--form input {
+    width: 45rem;
+    height: 7.7rem;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding-left: 4rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 6rem;
+    color: #333333;
+}
+
+.general__wraper--form input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.general__wraper--form button {
+    margin-top: 5.5rem;
+    max-width: 22rem;
+}
+
+.avatar__icon--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 13rem;
+    background: #6C9CFC;
+    border: 2.5px solid #6C9CFC;
+    border-radius: 50%;
+    margin-right: 2.5rem;
+}
+
+.avatar__btn p {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #999999;
+}
+
+.avatar__btn p img {
+    margin-right: 0.8rem;
+}
+
+.avatar__btn--load {
+    position: relative;
+    width: 15.2rem;
+    height: 5.7rem;
+    text-align: center;
+    border: 2px solid rgba(108, 156, 252, 0.25);
+    border-radius: 0.6rem;
+}
+
+.avatar__btn--load label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 6rem;
+    color: #6C9CFC;
+}
+
+.avatar__btn--load label:hover {
+    cursor: pointer;
+}
+
+.avatar__btn--load input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    visibility: hidden;
+    background-color: transparent;
+    border-color: transparent;
+    background: transparent;
+    font-size: 0;
+    color: transparent;
+}
+
+.avatar__btn--load input:focus {
+    outline: none;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text__left {
+    text-align: left;
+}
+
+.text__right {
+    text-align: right;
+}
+
+.text__center {
+    text-align: center;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+@media (max-width: 991px) {
+    .mt-6 {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mt-6 {
+        margin-top: 2rem;
+    }
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .mt-4 {
+        margin-top: 2rem;
+    }
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+@media (max-width: 991px) {
+    .mt-2 {
+        margin-top: 1rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 7rem;
+    color: #6C9CFC;
+    border: 2px solid rgba(108, 156, 252, 0.25);
+    border-radius: 0.6rem;
+    padding: 0.5rem 5rem;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    background: transparent;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #6C9CFC;
+}
+
+.btn--active {
+    color: #ffffff;
+    background-color: #6C9CFC;
+}
+
+.btn--active:hover {
+    cursor: pointer;
+    color: #6C9CFC;
+    background-color: #ffffff;
+}
+
+#setingButton {
+    display: block;
 }
 
 
