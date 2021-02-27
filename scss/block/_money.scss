@@ -1,0 +1,70 @@
+/*variables*/
+@import "./var.scss";
+/*helpers class*/
+@import "./help.scss";
+/*mixins*/
+@import "./mixin.scss";
+
+.lorem {
+  font-size: 1.6rem;
+  font-family: $font;
+  font-weight: 500;
+  color: $main_text;
+  margin: 1.5rem 0;
+}
+.money__wraper {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  height: 370px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  &:hover {
+    .money__front {
+      transform: rotateX(-180deg);
+      -webkit-transform: rotateX(-180deg);
+      -moz-transform: rotateX(-180deg);
+      -ms-transform: rotateX(-180deg);
+      -o-transform: rotateX(-180deg);
+}
+    .money__back{
+      transform: rotateX(-360deg);
+      -webkit-transform: rotateX(-360deg);
+      -moz-transform: rotateX(-360deg);
+      -ms-transform: rotateX(-360deg);
+      -o-transform: rotateX(-360deg);
+}
+  }
+}
+.money__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+}
+.money__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
