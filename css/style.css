@@ -441,8 +441,17 @@ a:focus {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .header__wraper {
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        width: auto;
+    }
+}
+
 .nav__brand {
     width: 26rem;
+    max-width: 26rem;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -453,6 +462,24 @@ a:focus {
 .nav__brand--aside {
     height: 9rem;
     width: 26rem;
+}
+
+@media (max-width: 768px) {
+    .nav__brand--aside {
+        display: none;
+    }
+}
+
+.nav__menu {
+    width: calc(100% - 26rem);
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav__menu {
+        width: 100%;
+        order: 2;
+    }
 }
 
 .menu__wraper {
@@ -472,6 +499,12 @@ a:focus {
     line-height: 2.6rem;
     letter-spacing: 0.02em;
     color: #333333;
+}
+
+@media (max-width: 768px) {
+    .menu__wraper--icon {
+        display: none;
+    }
 }
 
 .lang__menu {
@@ -589,6 +622,14 @@ a:focus {
     background-color: #ffffff;
     width: 26rem;
     height: 100vh;
+    transition: left 0.4s linear;
+}
+
+@media (max-width: 768px) {
+    #aside {
+        left: -26rem;
+        height: calc(100vh - 9rem);
+    }
 }
 
 .aside__nav {
@@ -757,6 +798,12 @@ a:focus {
     padding-top: 4rem;
 }
 
+@media (max-width: 768px) {
+    #main {
+        width: 100%;
+    }
+}
+
 .general__wraper {
     width: 100%;
     background-color: #ffffff;
@@ -841,6 +888,12 @@ a:focus {
 
 .general__wraper--form input:focus {
     border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .general__wraper--form input {
+        width: 40rem;
+    }
 }
 
 .general__wraper--form button {

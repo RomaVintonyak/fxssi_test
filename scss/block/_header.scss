@@ -14,9 +14,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile{
+    flex-wrap: wrap;
+    background-color: $white;
+    width: auto;
+  }
 }
 .nav__brand {
   width: 26rem;
+  max-width: 26rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -25,6 +31,20 @@
   &--aside{
     height: 9rem;
     width: 26rem;
+    @include mobile{
+      display: none;
+    }
+  }
+  @include mobile {
+
+  }
+}
+.nav__menu{
+  width: calc(100% - 26rem);
+  height: 100%;
+  @include mobile{
+    width: 100%;
+    order: 2;
   }
 }
 .menu__wraper {
@@ -43,6 +63,11 @@
       line-height: 2.6rem;
       letter-spacing: 0.02em;
       color: $main_text;
+    }
+  }
+  &--icon{
+    @include mobile{
+      display: none;
     }
   }
 }

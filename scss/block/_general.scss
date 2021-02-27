@@ -11,6 +11,9 @@
   top: 9rem;
   z-index: 15;
   padding-top: 4rem;
+  @include mobile{
+    width: 100%;
+  }
 }
 .general__wraper {
   width: 100%;
@@ -83,6 +86,9 @@
       color: $main_text;
       &:focus{
         border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+      @include mobile{
+        width: 40rem;
       }
     }
     button{

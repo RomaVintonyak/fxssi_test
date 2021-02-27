@@ -12,6 +12,11 @@
   background-color: $white;
   width: 26rem;
   height: 100vh;
+  transition: left 0.4s linear;
+  @include mobile{
+    left: -26rem;
+    height: calc(100vh - 9rem);
+  }
 }
 .aside__nav {
   width: 100%;
