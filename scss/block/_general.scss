@@ -11,8 +11,10 @@
   top: 9rem;
   z-index: 15;
   padding-top: 4rem;
-  @include mobile{
+  @include mobile {
     width: 100%;
+    top: 16rem;
+    padding-top: 3rem;
   }
 }
 .general__wraper {
@@ -46,6 +48,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
+    @include mobile-sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &--password {
     margin-bottom: 3.4rem;
@@ -76,7 +82,7 @@
       height: 7.7rem;
       background: $white;
       border: 1px solid rgba(0, 0, 0, 0.05);
-      border-radius: 6px;      
+      border-radius: 6px;
       padding-left: 4rem;
       font-family: $font;
       font-style: normal;
@@ -84,17 +90,29 @@
       font-size: 2rem;
       line-height: 6rem;
       color: $main_text;
-      &:focus{
+      &:focus {
         border: 1px solid rgba(0, 0, 0, 0.15);
       }
-      @include mobile{
+      @include tablet {
         width: 40rem;
       }
+      @include mobile {
+        width: 30rem;
+      }
+      @include mobile-sm {
+        width: 21rem;
+        padding-left: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
     }
-    button{
+    button {
       margin-top: 5.5rem;
       max-width: 22rem;
     }
+  }
+  @include mobile-sm {
+    padding: 3rem 4rem;
   }
 }
 .avatar__icon {
@@ -108,6 +126,10 @@
     border: 2.5px solid $blue;
     border-radius: 50%;
     margin-right: 2.5rem;
+    @include mobile-sm {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
   }
 }
 .avatar__btn {
@@ -142,7 +164,7 @@
       font-size: 1.6rem;
       line-height: 6rem;
       color: $blue;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -162,6 +184,9 @@
       &:focus {
         outline: none;
       }
+    }
+    @include mobile-sm {
+      width: 21rem;
     }
   }
 }

@@ -36,6 +36,12 @@
       -o-transform: rotateX(-360deg);
     }
   }
+  @include mobile{
+    height: 320px;
+  }
+  @include mobile-sm{
+    height: 250px;
+  }
 }
 .money__front {
   position: absolute;

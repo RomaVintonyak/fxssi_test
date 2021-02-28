@@ -370,6 +370,12 @@ a:focus {
     margin: 0 auto;
 }
 
+@media (max-width: 576px) {
+    .container {
+        max-width: 290px;
+    }
+}
+
 .img {
     display: block;
     width: 100%;
@@ -437,6 +443,12 @@ a:focus {
     height: 9rem;
 }
 
+@media (max-width: 768px) {
+    #header {
+        height: 8.5rem;
+    }
+}
+
 .header__wraper {
     width: 100%;
     height: 100%;
@@ -450,6 +462,7 @@ a:focus {
         flex-wrap: wrap;
         background-color: #ffffff;
         width: auto;
+        justify-content: space-around;
     }
 }
 
@@ -471,6 +484,17 @@ a:focus {
 @media (max-width: 768px) {
     .nav__brand--aside {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__brand {
+        width: 33%;
+    }
+
+    .nav__brand a img {
+        width: 9.2rem;
+        height: 2.5rem;
     }
 }
 
@@ -506,8 +530,81 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+    .menu__wraper--text h2 {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu__wraper--text h2 {
+        padding-left: 5.5rem;
+    }
+}
+
+@media (max-width: 768px) {
     .menu__wraper--icon {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__wraper {
+        height: 7.6rem;
+        position: absolute;
+        left: 0;
+        z-index: 150;
+        width: 100%;
+    }
+}
+
+.mobile__lang {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile__lang {
+        display: block;
+        height: 100%;
+        width: 33%;
+    }
+
+    .mobile__lang ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile__lang ul li {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+}
+
+.burger__btn {
+    height: 100%;
+    width: 33%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.burger__btn span {
+    display: block;
+    width: 4.4rem;
+    height: 1px;
+    background-color: #333333;
+}
+
+.burger__btn span:first-child {
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .burger__btn {
+        display: flex;
     }
 }
 
@@ -805,6 +902,8 @@ a:focus {
 @media (max-width: 768px) {
     #main {
         width: 100%;
+        top: 16rem;
+        padding-top: 3rem;
     }
 }
 
@@ -844,6 +943,13 @@ a:focus {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 576px) {
+    .general__wraper--avatar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .general__wraper--password {
@@ -894,15 +1000,36 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .general__wraper--form input {
         width: 40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .general__wraper--form input {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .general__wraper--form input {
+        width: 21rem;
+        padding-left: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
     }
 }
 
 .general__wraper--form button {
     margin-top: 5.5rem;
     max-width: 22rem;
+}
+
+@media (max-width: 576px) {
+    .general__wraper {
+        padding: 3rem 4rem;
+    }
 }
 
 .avatar__icon--circle {
@@ -915,6 +1042,13 @@ a:focus {
     border: 2.5px solid #6C9CFC;
     border-radius: 50%;
     margin-right: 2.5rem;
+}
+
+@media (max-width: 576px) {
+    .avatar__icon--circle {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 .avatar__btn p {
@@ -975,6 +1109,12 @@ a:focus {
 
 .avatar__btn--load input:focus {
     outline: none;
+}
+
+@media (max-width: 576px) {
+    .avatar__btn--load {
+        width: 21rem;
+    }
 }
 
 .img {
@@ -1075,6 +1215,12 @@ a:focus {
     background-color: #ffffff;
 }
 
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.5rem 2rem;
+    }
+}
+
 #setingButton {
     display: block;
 }
@@ -1173,6 +1319,18 @@ a:focus {
     -moz-transform: rotateX(-360deg);
     -ms-transform: rotateX(-360deg);
     -o-transform: rotateX(-360deg);
+}
+
+@media (max-width: 768px) {
+    .money__wraper {
+        height: 320px;
+    }
+}
+
+@media (max-width: 576px) {
+    .money__wraper {
+        height: 250px;
+    }
 }
 
 .money__front {
