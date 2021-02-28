@@ -20,21 +20,21 @@
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
-  &:hover {
+  &--active {
     .money__front {
       transform: rotateX(-180deg);
       -webkit-transform: rotateX(-180deg);
       -moz-transform: rotateX(-180deg);
       -ms-transform: rotateX(-180deg);
       -o-transform: rotateX(-180deg);
-}
-    .money__back{
+    }
+    .money__back {
       transform: rotateX(-360deg);
       -webkit-transform: rotateX(-360deg);
       -moz-transform: rotateX(-360deg);
       -ms-transform: rotateX(-360deg);
       -o-transform: rotateX(-360deg);
-}
+    }
   }
 }
 .money__front {

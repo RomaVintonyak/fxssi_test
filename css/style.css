@@ -1159,7 +1159,7 @@ a:focus {
     perspective: 1000px;
 }
 
-.money__wraper:hover .money__front {
+.money__wraper--active .money__front {
     transform: rotateX(-180deg);
     -webkit-transform: rotateX(-180deg);
     -moz-transform: rotateX(-180deg);
@@ -1167,7 +1167,7 @@ a:focus {
     -o-transform: rotateX(-180deg);
 }
 
-.money__wraper:hover .money__back {
+.money__wraper--active .money__back {
     transform: rotateX(-360deg);
     -webkit-transform: rotateX(-360deg);
     -moz-transform: rotateX(-360deg);
