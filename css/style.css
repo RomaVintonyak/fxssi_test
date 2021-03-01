@@ -372,7 +372,7 @@ a:focus {
 
 @media (max-width: 576px) {
     .container {
-        max-width: 290px;
+        max-width: 310px;
     }
 }
 
@@ -1329,14 +1329,13 @@ a:focus {
 
 @media (max-width: 576px) {
     .money__wraper {
-        height: 250px;
+        height: 200px;
     }
 }
 
 .money__front {
     position: absolute;
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     transition: 1s linear;
@@ -1349,7 +1348,6 @@ a:focus {
 .money__back {
     position: absolute;
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     transform: rotateX(-180deg);

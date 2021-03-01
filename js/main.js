@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
   var moneyTop = $(".money__wraper").offset().top;
   var moneyHeight = $(".money__wraper").height();
   $(document).on("scroll", function () {
-    if ($(this).scrollTop() >= moneyTop - moneyHeight) {
+    if ($(this).scrollTop() >= (moneyTop - moneyHeight)) {
       $(".money__wraper").addClass("money__wraper--active");
     } else {
       $(".money__wraper").removeClass("money__wraper--active");

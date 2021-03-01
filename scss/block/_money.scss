@@ -40,13 +40,12 @@
     height: 320px;
   }
   @include mobile-sm{
-    height: 250px;
+    height: 200px;
   }
 }
 .money__front {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   transition: 1s linear;
@@ -58,7 +57,6 @@
 .money__back {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   transform: rotateX(-180deg);
